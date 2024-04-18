@@ -15,3 +15,10 @@ Here's how Supervisord works:
 6. **Event Notifications**: Supervisord can emit events when processes start, stop, or encounter errors, allowing you to integrate it with other monitoring or alerting systems.
 
 Overall, Supervisord simplifies the task of managing multiple processes within a single environment, making it easier to develop, deploy, and maintain complex applications. However, it's important to note that while Supervisord is a convenient tool for managing processes, it's not a replacement for proper container orchestration tools like Docker Compose or Kubernetes in production environments.
+
+**How to run**
+
+1.  Build docker image:  docker build -t <image_name> .
+2.  List docker image: docker images
+3.  Create docker container: docker run -p 9001:9001 --name <container_name> <image_name>
+4.  Access Supervisord dashboard using browser by url http://localhost:9001
